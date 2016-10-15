@@ -1,0 +1,26 @@
+#section_nav a {
+  width: 25%;
+  color: black;
+  display: inline-block;
+  padding: 4pt 0;
+  font-size: 30pt;
+  font-family: Share;
+  text-decoration: none;
+  text-align: center;
+  background-color: rgba(#FFF, 0.05);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  transition: 0.3s ease;
+}
+
+#section_nav a:hover {
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  padding: 8pt 0;
+}
+
+#section_nav .section_current {
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  padding: 8pt 0;
+}

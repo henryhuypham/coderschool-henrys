@@ -1,0 +1,15 @@
+<div style="height: 2.5vh"></div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 no_padding">
+      <nav id="section_nav"><!--
+        --><a class="<%= 'section_current' if params[:section] == 'breakfast' %>" href="/menu?section=breakfast">Breakfast</a><!--
+        --><a class="<%= 'section_current' if params[:section] == 'lunch' %>" href="/menu?section=lunch">Lunch</a><!--
+        --><a class="<%= 'section_current' if params[:section] == 'dinner' %>" href="/menu?section=dinner">Dinner</a><!--
+        --><a class="<%= 'section_current' if params[:section] == 'drinks' %>" href="/menu?section=drinks">Drinks</a>
+      </nav>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</div>
