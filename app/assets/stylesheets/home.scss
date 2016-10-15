@@ -1,3 +1,36 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.scss.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(http://fonts.googleapis.com/css?family=Kalam);
+
+#home_logo {
+  top:50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%, 0);
+  position: absolute;
+}
+
+#home_nav {
+  padding: 24px;
+  text-align: center;
+  background: transparent;
+  font-family: Kalam;
+}
+
+.home_menu_item {
+  transition: 0.3s ease;
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 20px 0;
+  margin: 0;
+  display: inline-block;
+  width: 49%;
+}
+
+.home_menu_item:hover {
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  padding: 6px 0;
+  text-decoration: none;
+  color: black;
+}
