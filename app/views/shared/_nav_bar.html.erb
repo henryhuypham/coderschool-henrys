@@ -2,8 +2,8 @@
   <nav id="top_nav">
     <a href="/"><%= image_tag('logo_small.png', alt: "Henry's") %></a>
     <div class="top_nav_action">
-      <a href="/menu" class="<%= controller_name != 'contact_us' ? 'current_action' : '' %>">Menu</a>
-      <a href="/contact-us" class="<%= controller_name == 'contact_us' ? 'current_action' : '' %>">Contact Us</a>
+      <a href="/menu" class="<%= 'current_action' if controller_name != 'contact_us' %>">Menu</a>
+      <a href="/contact-us" class="<%= 'current_action' if controller_name == 'contact_us' %>">Contact Us</a>
     </div>
   </nav>
 </div>
