@@ -1,0 +1,7 @@
+<nav id="section_nav"><!--
+  --><a class="<%= 'section_current' unless params[:section] %>" href="/menu">All</a><!--
+  --><a class="<%= 'section_current' if params[:section] == 'breakfast' %>" href="/menu?section=breakfast">Breakfast</a><!--
+  --><a class="<%= 'section_current' if params[:section] == 'lunch' %>" href="/menu?section=lunch">Lunch</a><!--
+  --><a class="<%= 'section_current' if params[:section] == 'dinner' %>" href="/menu?section=dinner">Dinner</a><!--
+  --><a class="<%= 'section_current' if params[:section] == 'drinks' %>" href="/menu?section=drinks">Drinks</a>
+</nav>

@@ -3,12 +3,17 @@
   <div class="row">
     <div class="col-md-1"></div>
     <div class="col-md-10 no_padding">
-      <nav id="section_nav"><!--
-        --><a class="<%= 'section_current' if params[:section] == 'breakfast' %>" href="/menu?section=breakfast">Breakfast</a><!--
-        --><a class="<%= 'section_current' if params[:section] == 'lunch' %>" href="/menu?section=lunch">Lunch</a><!--
-        --><a class="<%= 'section_current' if params[:section] == 'dinner' %>" href="/menu?section=dinner">Dinner</a><!--
-        --><a class="<%= 'section_current' if params[:section] == 'drinks' %>" href="/menu?section=drinks">Drinks</a>
-      </nav>
+      <%= render 'shared/section_nav_bar' %>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+  <div class="menu_divider">
+    <%= image_tag('menu_divider.png') %>
+  </div>
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 no_padding">
+      <%= render partial: 'menu/food_item', collection: @food_items %>
     </div>
     <div class="col-md-1"></div>
   </div>
