@@ -1,4 +1,41 @@
+@import url(http://fonts.googleapis.com/css?family=Rajdhani);
+
 #map {
-  height: 400px;
+  height: 86vh;
   width: 100%;
+}
+
+.contact_address {
+  height: 86vh;
+  background-color: rgba(#000, 0.85);
+}
+
+.contact_content {
+  color: white;
+  font-size: 1.2vw;
+  font-family: Rajdhani;
+  font-weight: 100;
+}
+
+.contact_info {
+  text-align: right;
+}
+
+#contact_info {
+  width: 100%;
+}
+
+.contact_content h2 {
+  font-size: 2.5vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact_content h2::after {
+  content: '';
+  display: block;
+  width: 25%;
+  background-color: white;
+  height: 2px;
+  margin: 0.5em auto 0.6em;
 }

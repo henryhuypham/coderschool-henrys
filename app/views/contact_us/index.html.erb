@@ -1,23 +1,56 @@
-<div class="container">
+<nav id="home_nav">
+  <a href="/menu">Menu</a>
+  <a href="/contact-us">Contact Us</a>
+</nav>
+<div class="container-fluid">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-5 no_padding">
       <div id="map"></div>
       <script>
         function initMap() {
-          var uluru = {lat: -25.363, lng: 131.044};
+          var henrys = {lat: 10.7781858, lng: 106.6997435};
           var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 4,
-            center: uluru
+            zoom: 14,
+            center: henrys
           });
           var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
+            position: henrys,
+            map: map,
+            label: 'H',
+            title: "Henry's"
           });
         }
       </script>
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgbEi-TP5VMKigppAmN7e7ujen_PGg2ZU&callback=initMap"></script>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-5 contact_address no_padding">
+      <div class="contact_content">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 center_div">
+          <h2>HERE WE ARE</h2>
+          <table id="contact_info">
+            <tbody>
+            <tr>
+              <td>Address</td>
+              <td class="contact_info">11 Le Thanh Ton street, district 1, Ho CHi Minh City</td>
+            </tr>
+            <tr>
+              <td>Phone</td>
+              <td class="contact_info">+840812348888</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td class="contact_info">reception@henrys.com</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+    <div class="col-md-1">
     </div>
   </div>
 </div>

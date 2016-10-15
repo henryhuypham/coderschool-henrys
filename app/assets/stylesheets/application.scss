@@ -1,6 +1,19 @@
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Share);
 
 body {
   background-image: image-url('background.png');
   background-size: cover;
+}
+
+.no_padding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.center_div {
+  top:50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%, 0);
+  position: absolute;
 }
