@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import url(http://fonts.googleapis.com/css?family=Share);
+@import url(http://fonts.googleapis.com/css?family=Kalam);
 
 body {
   background-image: image-url('background.png');
@@ -12,8 +13,50 @@ body {
 }
 
 .center_div {
-  top:50%;
+  top: 50%;
   left: 50%;
-  transform: translate3d(-50%,-50%, 0);
+  transform: translate3d(-50%, -50%, 0);
   position: absolute;
+}
+
+#top_nav_wrapper {
+  height: 4vh;
+  background-color: rgba(#FFF, 0.6);
+  text-align: left;
+  vertical-align: middle;
+}
+
+#top_nav {
+  padding-left: 10pt;
+}
+
+#top_nav a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-size: 22pt;
+  font-family: Share;
+}
+
+#top_nav div a {
+  padding-left: 14pt;
+  padding-right: 14pt;
+  transition: 0.1s ease;
+}
+
+#top_nav .current_action {
+  border-bottom: 2px solid black;
+}
+
+#top_nav div a:hover {
+  border-bottom: 4px solid black;
+}
+
+#top_nav img {
+  height: 3vh;
+}
+
+#top_nav .top_nav_action {
+  display: inline-block;
+  float: right;
 }
