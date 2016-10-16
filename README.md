@@ -53,8 +53,6 @@ The following **additional** features are implemented:
 The following **known issues**:
 
 * I used some fonts of Google. It works on my local machine, but the fonts are not downloaded when deployed to Heroku.
-* I encounter an issue, which prevent me to run `rails console`. It cost me a lot of time to fix it. I finally found a way to fix it as described here: https://github.com/guard/guard/wiki/Add-Readline-support-to-Ruby-on-Mac-OS-X. This seems to be an issue with mac os Sierra.
-* Because of the above issue (cant run `rails console`), I didn't have enough time to complete the optional requirements, and the UI of some pages were not tuned up nicely.
 
 ## Video Walkthrough
 
@@ -66,7 +64,9 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+* I encounter an issue, which prevent me to run `rails console`. It cost me a lot of time to fix it. I finally found a way to fix it as described here: https://github.com/guard/guard/wiki/Add-Readline-support-to-Ruby-on-Mac-OS-X. This seems to be an issue with mac os Sierra.
+* Because of the above issue (cant run `rails console`), I didn't have enough time to complete the optional requirements, and the UI of some pages were not tuned up nicely.
+
 
 ## License
 
