@@ -1,9 +1,11 @@
 <div class="col-md-4 food_item_card_wrapper">
-  <div class="card food_item_card">
-    <img class="card-img-top" src="<%= food_item.image_url %>" alt="<%= food_item.name %>"/>
-    <div class="card-block">
-      <h4 class="card-title"><%= food_item.name %></h4>
-      <h4 class="card-title"><%= format_with_thousand_separator(food_item.price) %></h4>
+  <a href="/food_items/<%= food_item.id %>">
+    <div class="card food_item_card">
+      <img class="card-img-top" src="<%= food_item.image_url %>" alt="<%= food_item.name %>"/>
+      <div class="card-block">
+        <h4 class="card-title"><%= food_item.name %></h4>
+        <h4 class="card-title"><%= format_with_thousand_separator(food_item.price) %></h4>
+      </div>
     </div>
-  </div>
+  </a>
 </div>

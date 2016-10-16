@@ -1,3 +1,39 @@
-// Place all the styles related to the food_items controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#food_item_box {
+  background-color: rgba(#FFF, 0.7);
+  border-width: 0;
+  color: black;
+  font-family: Share;
+
+  .food_item_image {
+    width: 100%;
+    height: 400pt;
+  }
+
+  h3:nth-child(2) {
+    text-align: right;
+  }
+
+  h2 {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  h2:before {
+    content: '';
+    display: block;
+    width: 25%;
+    background-color: black;
+    height: 2px;
+    margin: 1em auto 1em;
+  }
+
+  form {
+    width: auto;
+    margin: 20pt;
+  }
+
+  .food_item_order_field {
+    display: block;
+    width: 100%;
+  }
+}

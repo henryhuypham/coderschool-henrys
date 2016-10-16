@@ -1,29 +1,36 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @food_item.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @food_item.description %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @food_item.price %>
-</p>
-
-<p>
-  <strong>Image url:</strong>
-  <%= @food_item.image_url %>
-</p>
-
-<p>
-  <strong>Section:</strong>
-  <%= @food_item.section %>
-</p>
-
-<%= link_to 'Edit', edit_food_item_path(@food_item) %> |
-<%= link_to 'Back', food_items_path %>
+<div style="height: 5vh"></div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 no_padding">
+      <div id="food_item_box" class="row">
+        <div class="col-md-5 no_padding">
+          <img class="food_item_image" src="<%= @food_item.image_url %>" alt="<%= @food_item.name %>"/>
+        </div>
+        <div class="col-md-7 no_padding">
+          <table id="food_item_info" style="width: auto; padding: 20px">
+            <tbody>
+            <tr>
+              <td><h3><%= @food_item.name %></h3></td>
+              <td><h3><%= format_with_thousand_separator(@food_item.price) %></h3></td>
+            </tr>
+            <tr>
+              <td><%= @food_item.description %></td>
+            </tr>
+            </tbody>
+          </table>
+          <div>
+            <h2>PLACE AN ORDER</h2>
+            <%= form_tag nil, method: 'post' do %>
+              <%= text_field_tag :user_name, nil, placeholder: 'Full Name', class: 'food_item_order_field' %>
+              <%= text_field_tag :user_phone_number, nil, placeholder: 'Phone Number', class: 'food_item_order_field' %>
+              <%= text_field_tag :user_address, nil, placeholder: 'Address', class: 'food_item_order_field' %>
+              <%= submit_tag 'Order', class: 'btn btn-secondary' %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</div>
