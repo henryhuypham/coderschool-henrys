@@ -12,6 +12,21 @@
   </div>
   <div class="row">
     <div class="col-md-1"></div>
+    <div class="col-md-4">
+      <%= form_tag nil, method: 'get' do %>
+        <%= hidden_field_tag :section, params[:section] %>
+        <div class="form-inline">
+          <%= select_tag :sort_column, options_for_select([%w[Name name], %w[Price price]]), class: 'form-control' %>
+          <%= select_tag :sort_direction, options_for_select([%w[Ascending asc], %w[Descending desc]]), class: 'form-control' %>
+          <%= submit_tag 'Sort', class: 'btn btn-secondary' %>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-md-6"></div>
+    <div class="col-md-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-1"></div>
     <div class="col-md-10 no_padding">
       <%= render partial: 'menu/food_item', collection: @food_items %>
     </div>
