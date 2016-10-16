@@ -24,5 +24,5 @@ end
 
 ### Seeds data ###
 
-# create_default_sections
+create_default_sections
 create_default_menu
