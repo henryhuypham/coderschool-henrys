@@ -1,0 +1,35 @@
+<div style="height: 5vh"></div>
+
+<div id="order_success_wrapper" class="container-fluid">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <h2>Thank You For Your Order</h2>
+      <table style="width: auto; padding: 20px">
+        <tbody>
+        <tr>
+          <td>Item Name</td>
+          <td><%= @order.food_item.name %></td>
+        </tr>
+        <tr>
+          <td>Total Cost</td>
+          <td><%= format_with_thousand_separator(@order.total_cost) %></td>
+        </tr>
+        <tr>
+          <td>Buyer's Name</td>
+          <td><%= @order.user_name %></td>
+        </tr>
+        <tr>
+          <td>Buyer's Address</td>
+          <td><%= @order.address %></td>
+        </tr>
+        <tr>
+          <td>Order Time</td>
+          <td><%= readable_time_format_string(Time.now) %></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>

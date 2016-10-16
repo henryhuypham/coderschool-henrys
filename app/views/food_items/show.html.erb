@@ -21,7 +21,8 @@
           </table>
           <div>
             <h2>PLACE AN ORDER</h2>
-            <%= form_tag nil, method: 'post' do %>
+            <%= form_tag '/orders/place_order', method: 'post' do %>
+              <%= hidden_field_tag :food_item_id, @food_item.id %>
               <%= text_field_tag :user_name, nil, placeholder: 'Full Name', class: 'food_item_order_field' %>
               <%= text_field_tag :user_phone_number, nil, placeholder: 'Phone Number', class: 'food_item_order_field' %>
               <%= text_field_tag :user_address, nil, placeholder: 'Address', class: 'food_item_order_field' %>
