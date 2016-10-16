@@ -1,0 +1,10 @@
+<%= form_tag '/menu/search', method: 'get' do %>
+  <div class="wrap form-inline">
+    <div class="search">
+      <%= text_field_tag :search_term, nil, placeholder: 'Find your favorite food', class: 'searchTerm' %>
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </div>
+<% end %>
