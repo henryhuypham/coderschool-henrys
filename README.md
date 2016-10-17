@@ -58,9 +58,8 @@ The following **known issues**:
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](path-to-your-GIF-file)
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+https://www.dropbox.com/s/zfq7qhms3n5xqyn/Henrys.mov?dl=0
+I got issue with LiceCap (black screen when doing the record) so I made a mp4 video instead. Hope that it's fine. 
 
 ## Notes
 
